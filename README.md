@@ -11,3 +11,4 @@
 - [【Day - 4】Ionic搭配Tailwind - 提升開發效率的新策略](https://ithelp.ithome.com.tw/articles/10314908)
 - [【Day - 5】Ionic加入Three.js - 在APP中快速建立3D模型](https://ithelp.ithome.com.tw/articles/10315131)
 - [【Day - 6】Capacitor Voice Recorder - 實現錄音功能](https://ithelp.ithome.com.tw/articles/10315378)
+- [【Day - 7】Gesture & Capacitor Haptics - 建立自定義手勢和觸覺反饋](https://ithelp.ithome.com.tw/articles/10315630)
