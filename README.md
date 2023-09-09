@@ -13,3 +13,4 @@
 - [【Day - 6】Capacitor Voice Recorder - 實現錄音功能](https://ithelp.ithome.com.tw/articles/10315378)
 - [【Day - 7】Gesture & Capacitor Haptics - 建立自定義手勢和觸覺反饋](https://ithelp.ithome.com.tw/articles/10315630)
 - [【Day - 8】Open AI API - 認識GPT和Whisper](https://ithelp.ithome.com.tw/articles/10315892)
+- [【Day - 9】Whisper模型 - 將語音轉成文字](https://ithelp.ithome.com.tw/articles/10316211)
