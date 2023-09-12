@@ -16,3 +16,4 @@
 - [【Day - 9】Whisper模型 - 將語音轉成文字](https://ithelp.ithome.com.tw/articles/10316211)
 - [【Day - 10】ASP.NET Web API - 用FFmpeg打造音訊轉換服務](https://ithelp.ithome.com.tw/articles/10316420)
 - [【Day - 11】Azure + Docker - 建置和部署服務](https://ithelp.ithome.com.tw/articles/10316642)
+- [【Day - 12】串接Azure服務 - 完成語音轉文字功能](https://ithelp.ithome.com.tw/articles/10316917)
