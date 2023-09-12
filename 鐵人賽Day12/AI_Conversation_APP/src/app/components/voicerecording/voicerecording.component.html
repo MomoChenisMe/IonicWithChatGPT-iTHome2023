@@ -3,11 +3,11 @@
     <span *ngIf="(isRecording$ | async)">{{ (timer$ | async)?.minutes }} : {{ (timer$ | async)?.seconds }}</span>
   </div>
   <div #recordingButtonElement
-    class="ion-activatable relative overflow-hidden w-full h-full flex flex-col items-center rounded-full">
+    class="w-24 h-24 flex flex-col items-center rounded-full">
     <ng-container *ngIf="(isLoading$ | async) else isNotLoadingTemplate">
       <!--讀取時-->
       <div
-        class=" rounded-full bg-gradient-to-br from-gray-300 to-gray-200 border-4 border-gray-100 flex items-center p-5">
+        class="rounded-full bg-gradient-to-br from-gray-300 to-gray-200 border-4 border-gray-100 flex items-center p-5">
         <span class="loader"></span>
       </div>
     </ng-container>
@@ -24,7 +24,6 @@
           <ion-icon class="text-5xl text-white" name="mic-outline"></ion-icon>
         </div>
       </ng-template>
-      <ion-ripple-effect></ion-ripple-effect>
     </ng-template>
   </div>
 </div>
