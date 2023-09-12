@@ -14,7 +14,7 @@
     <ng-template #isNotLoadingTemplate>
       <ng-container *ngIf="(isRecording$ | async) else isNotRecordingTemplate">
         <div
-          class=" rounded-full bg-gradient-to-br from-purple-300 to-blue-200 border-4 border-rose-400 flex items-center p-5">
+          class="rounded-full bg-gradient-to-br from-purple-300 to-blue-200 border-4 border-rose-400 flex items-center p-5">
           <ion-icon class="text-5xl text-rose-500" name="mic-outline"></ion-icon>
         </div>
       </ng-container>
