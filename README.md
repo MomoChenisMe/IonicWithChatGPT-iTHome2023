@@ -18,3 +18,4 @@
 - [【Day - 11】Azure + Docker - 建置和部署服務](https://ithelp.ithome.com.tw/articles/10316642)
 - [【Day - 12】串接Azure服務 - 完成語音轉文字功能](https://ithelp.ithome.com.tw/articles/10316917)
 - [【Day - 13】Prompt Engineering實戰1 - 測試提示工程](https://ithelp.ithome.com.tw/articles/10317518)
+- [【Day - 14】GPT模型 - 打造流暢自然的英文對話](https://ithelp.ithome.com.tw/articles/10317911)
