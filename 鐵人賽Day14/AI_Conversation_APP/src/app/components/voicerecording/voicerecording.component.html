@@ -1,0 +1,29 @@
+<div class="flex flex-col items-center">
+  <div class="text-xl font-bold text-rose-500 h-8 w-full text-center">
+    <span *ngIf="(isRecording$ | async)">{{ (timer$ | async)?.minutes }} : {{ (timer$ | async)?.seconds }}</span>
+  </div>
+  <div #recordingButtonElement
+    class="w-24 h-24 flex flex-col items-center rounded-full">
+    <ng-container *ngIf="(isLoading$ | async) else isNotLoadingTemplate">
+      <!--讀取時-->
+      <div
+        class="rounded-full bg-gradient-to-br from-gray-300 to-gray-200 border-4 border-gray-100 flex items-center p-5">
+        <span class="loader"></span>
+      </div>
+    </ng-container>
+    <ng-template #isNotLoadingTemplate>
+      <ng-container *ngIf="(isRecording$ | async) else isNotRecordingTemplate">
+        <div
+          class="rounded-full bg-gradient-to-br from-purple-300 to-blue-200 border-4 border-rose-400 flex items-center p-5">
+          <ion-icon class="text-5xl text-rose-500" name="mic-outline"></ion-icon>
+        </div>
+      </ng-container>
+      <ng-template #isNotRecordingTemplate>
+        <div
+          class="rounded-full bg-gradient-to-br from-purple-500 to-blue-400 border-4 border-gray-300 flex items-center p-5">
+          <ion-icon class="text-5xl text-white" name="mic-outline"></ion-icon>
+        </div>
+      </ng-template>
+    </ng-template>
+  </div>
+</div>
