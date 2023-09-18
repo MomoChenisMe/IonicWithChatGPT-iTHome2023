@@ -22,3 +22,4 @@
 - [【Day - 15】GPT Tokenizer - 計算對話字數](https://ithelp.ithome.com.tw/articles/10318443)
 - [【Day - 16】Azure AI Service - 認識Speech Service語音服務](https://ithelp.ithome.com.tw/articles/10319281)
 - [【Day - 17】Prompt Engineering實戰2 - 控制模型輸出SSML格式](https://ithelp.ithome.com.tw/articles/10320135)
+- [【Day - 18】Speech Service串接 - 完成文字轉語音功能整合](https://ithelp.ithome.com.tw/articles/10321264)
