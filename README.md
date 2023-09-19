@@ -23,3 +23,4 @@
 - [【Day - 16】Azure AI Service - 認識Speech Service語音服務](https://ithelp.ithome.com.tw/articles/10319281)
 - [【Day - 17】Prompt Engineering實戰2 - 控制模型輸出SSML格式](https://ithelp.ithome.com.tw/articles/10320135)
 - [【Day - 18】Speech Service串接 - 完成文字轉語音功能整合](https://ithelp.ithome.com.tw/articles/10321264)
+- [【Day - 19】Function Calling實戰1 - 自定模型輸出格式](https://ithelp.ithome.com.tw/articles/10322234)
