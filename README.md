@@ -25,3 +25,4 @@
 - [【Day - 18】Speech Service串接 - 完成文字轉語音功能整合](https://ithelp.ithome.com.tw/articles/10321264)
 - [【Day - 19】Function Calling實戰1 - 自定模型輸出格式](https://ithelp.ithome.com.tw/articles/10322234)
 - [【Day - 20】Function Calling實戰2 - 讓語音重新播放](https://ithelp.ithome.com.tw/articles/10323165)
+- [【Day - 21】Function Calling實戰3 - 結合GPT和3D圖像動畫](https://ithelp.ithome.com.tw/articles/10323979)
