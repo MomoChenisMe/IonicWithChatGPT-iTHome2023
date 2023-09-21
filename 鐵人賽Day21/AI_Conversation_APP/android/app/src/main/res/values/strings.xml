@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AI英語口說導師</string>
+    <string name="title_activity_main">AI英語口說導師</string>
+    <string name="package_name">app.momochenisme.aiconversationapp</string>
+    <string name="custom_url_scheme">app.momochenisme.aiconversationapp</string>
+</resources>
