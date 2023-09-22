@@ -1,0 +1,21 @@
+<div class="w-full h-full bg-white">
+  <div class="flex flex-col w-full h-full">
+    <div class="relative flex flex-col w-full h-full">
+      <!-- 3D機器人動畫 -->
+      <app-robot3d class="flex-grow flex-shrink w-full py-20"></app-robot3d>
+    </div>
+    <div class="flex-none flex flex-row justify-between items-center pb-10 relative">
+      <div class="flex-grow">
+        <!-- 重播按鈕 -->
+        <app-replayaudio></app-replayaudio>
+      </div>
+      <div class="flex-grow">
+        <!-- 錄音按鈕 -->
+        <app-voicerecording (getRecordingBase64Text)="OnGetRecordingBase64Text($event)"></app-voicerecording>
+      </div>
+      <div class="flex-grow">
+        <div class="w-14"></div>
+      </div>
+    </div>
+  </div>
+</div>
