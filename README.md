@@ -29,3 +29,4 @@
 - [【Day - 22】Function Calling實戰4 - 判斷文法的正確性](https://ithelp.ithome.com.tw/articles/10324811)
 - [【Day - 23】Sheet Modal - 設計與實現文法錯誤提示功能](https://ithelp.ithome.com.tw/articles/10325458)
 - [【Day - 24】Server Sent Event應用 - 結合GPT即時說明文法錯誤](https://ithelp.ithome.com.tw/articles/10326289)
+- [【Day - 25】Capacitor SQLite - 儲存歷史對話內容](https://ithelp.ithome.com.tw/articles/10327235)
