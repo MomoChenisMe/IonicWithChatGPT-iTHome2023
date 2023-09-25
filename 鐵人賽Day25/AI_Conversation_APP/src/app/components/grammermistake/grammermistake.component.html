@@ -1,0 +1,42 @@
+<div class="flex flex-row justify-center items-center w-16 h-16">
+  <div *ngIf="(grammerStatus$ | async)?.hasGrammerMistake" (click)="modal.present()" [@fadeInOut]>
+    <div
+      class="ball-animation border-2 border-white-300 bg-amber-400 z-10 rounded-full p-1 w-full h-full flex justify-center items-center">
+      <ion-icon class="text-white text-4xl" name="bulb-outline"></ion-icon>
+    </div>
+  </div>
+</div>
+
+<ion-modal #modal [initialBreakpoint]="0.6" [breakpoints]="[0, 0.6, 1]"
+  (ionModalDidPresent)="onIonModalDidPresent($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>AI文法解析</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="modal.dismiss()">
+            <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="flex flex-col p-4">
+        <div class="mb-2"><span class="bg-rose-400 text-white font-bold rounded-2xl px-2 py-1">錯誤句型：</span></div>
+        <div class="mb-6 underline pl-2 text-gray-600">{{ (grammerStatus$ | async)?.mistakeSentence }}</div>
+        <div class="mb-2"><span class="bg-lime-500 text-white font-bold rounded-2xl px-2 py-1">錯誤解析：</span></div>
+        <div class="pl-2 align-baseline">
+          <p class="text-gray-800">
+            {{ mistakExplaneText }}
+            <ng-container *ngIf="isGettingExplane">
+              <span class="dot text-xl font-bold text-purple-400" style="--i:1"> .</span>
+              <span class="dot text-xl font-bold text-orange-400" style="--i:2"> .</span>
+              <span class="dot text-xl font-bold text-blue-400" style="--i:3"> .</span>
+              <span class="dot text-xl font-bold text-amber-400" style="--i:4"> .</span>
+            </ng-container>
+          </p>
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
