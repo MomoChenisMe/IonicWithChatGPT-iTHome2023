@@ -30,3 +30,4 @@
 - [【Day - 23】Sheet Modal - 設計與實現文法錯誤提示功能](https://ithelp.ithome.com.tw/articles/10325458)
 - [【Day - 24】Server Sent Event應用 - 結合GPT即時說明文法錯誤](https://ithelp.ithome.com.tw/articles/10326289)
 - [【Day - 25】Capacitor SQLite - 儲存歷史對話內容](https://ithelp.ithome.com.tw/articles/10327235)
+- [【Day - 26】Navigation導航 - 瀏覽歷史對話](https://ithelp.ithome.com.tw/articles/10328515)
