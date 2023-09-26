@@ -1,0 +1,19 @@
+<div class="flex flex-row items-center">
+  <ng-container *ngIf="(isAudioPlaying$ | async) || (isLoading$ | async) else isNotPlayingAudioTemplate">
+    <div class="w-full h-full flex flex-col items-center rounded-full mt-5">
+      <div
+        class="rounded-full bg-gradient-to-br from-gray-300 to-gray-200 border-4 border-gray-100 flex items-center p-3">
+        <ion-icon class="text-3xl text-white" name="ear-outline"></ion-icon>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #isNotPlayingAudioTemplate>
+    <div class="w-full h-full flex flex-col items-center rounded-full mt-5">
+      <div
+        class="ion-activatable relative overflow-hidden rounded-full bg-gradient-to-br from-purple-500 to-orange-300 border-2 border-gray-300 flex items-center p-3" (click)="onReplayAudio()">
+        <ion-icon class="text-3xl text-white" name="ear-outline"></ion-icon>
+        <ion-ripple-effect></ion-ripple-effect>
+      </div>
+    </div>
+  </ng-template>
+</div>
