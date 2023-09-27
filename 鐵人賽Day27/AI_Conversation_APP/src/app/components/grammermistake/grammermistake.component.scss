@@ -1,0 +1,39 @@
+.ball-animation {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.dot {
+  opacity: 0;
+  animation: fadeDot 2.5s infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+@keyframes fadeDot {
+  0%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
