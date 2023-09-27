@@ -31,3 +31,4 @@
 - [【Day - 24】Server Sent Event應用 - 結合GPT即時說明文法錯誤](https://ithelp.ithome.com.tw/articles/10326289)
 - [【Day - 25】Capacitor SQLite - 儲存歷史對話內容](https://ithelp.ithome.com.tw/articles/10327235)
 - [【Day - 26】Navigation導航 - 瀏覽歷史對話](https://ithelp.ithome.com.tw/articles/10328515)
+- [【Day - 27】Menu和Alert實戰 - 打造聊天室選單](https://ithelp.ithome.com.tw/articles/10329151)
