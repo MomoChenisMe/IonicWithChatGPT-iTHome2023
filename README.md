@@ -33,3 +33,4 @@
 - [【Day - 26】Navigation導航 - 瀏覽歷史對話](https://ithelp.ithome.com.tw/articles/10328515)
 - [【Day - 27】Menu和Alert實戰 - 打造聊天室選單](https://ithelp.ithome.com.tw/articles/10329151)
 - [【Day - 28】DALL·E和Cordova-res - 替換自己的Icon和Splash Screen](https://ithelp.ithome.com.tw/articles/10329821)
+- [【Day - 29】Capacitor Splash Screen & StatusBar - 神秘的白畫面和消失的工具列](https://ithelp.ithome.com.tw/articles/10330475)
