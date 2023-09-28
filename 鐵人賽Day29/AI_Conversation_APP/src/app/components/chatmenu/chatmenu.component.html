@@ -1,0 +1,32 @@
+<ion-menu #menu menuId="chat-menu" contentId="main-content" maxEdgeStart="0">
+  <ion-header>
+    <ion-toolbar>
+      <div class="border-b border-gray-300">
+        <div
+          class="mx-2 my-4 p-2 border-2 border-gray-400 rounded-lg bg-white flex flew-row items-center justify-center text-gray-500"
+          (click)="onAddChatRoomClick()">
+          <ion-icon class="text-xl" name="add-circle-outline"></ion-icon>
+          <span>新增聊天室</span>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ng-container *ngFor="let item of (chat$ | async); let i = index">
+      <div class="flex flex-col">
+        <div
+          [class]="'ion-activatable relative overflow-hidden flex flex-row items-center m-2 p-2 rounded-lg ' + (item.selecting ? 'bg-gradient-to-br from-purple-500 to-blue-400 border-2 border-gray-300 text-white' : '')">
+          <div class="flex-1 flex flex-row items-center" (click)="onChatRoomClick(item.chatroomid)">
+            <ion-icon class="flex-none text-xl" name="chatbubbles-outline"></ion-icon>
+            <span class="flex-1 mx-2">{{ item.name }}</span>
+          </div>
+          <div class="flex-none flex items-center p-2" (click)="onChatRoomDeleteClick(item.chatroomid)">
+            <ion-icon *ngIf="!item.selecting" class="flex-none text-xl text-rose-400" name="trash-outline"></ion-icon>
+          </div>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
+    </ng-container>
+  </ion-content>
+</ion-menu>

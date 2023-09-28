@@ -1,0 +1,84 @@
+.loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#749ed4 50px, transparent 0),
+    linear-gradient(#749ed4 50px, transparent 0),
+    linear-gradient(#749ed4 50px, transparent 0),
+    linear-gradient(#749ed4 50px, transparent 0),
+    linear-gradient(#749ed4 50px, transparent 0),
+    linear-gradient(#749ed4 50px, transparent 0);
+  background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
+  animation: rikSpikeRoll 0.85s linear infinite alternate;
+}
+
+@keyframes rikSpikeRoll {
+  0% {
+    background-size: 10px 3px;
+  }
+
+  16% {
+    background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  33% {
+    background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  50% {
+    background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  66% {
+    background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px
+  }
+
+  83% {
+    background-size: 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px
+  }
+
+  100% {
+    background-size: 10px 3px, 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px
+  }
+}
+
+.ripple {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ripple span {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid #bfdbfe;
+  border-radius: 50%;
+  animation: rippleAnimate 1s linear infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+.ripple:nth-child(2) span {
+  border: none;
+  background: rgba(0, 255, 0, 0.25)
+}
+
+@keyframes rippleAnimate {
+  0% {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 9rem;
+    height: 9rem;
+    opacity: 0.01;
+    border: 2px solid #ffffff;;
+  }
+}
